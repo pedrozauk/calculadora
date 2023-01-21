@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="styles.css"> <script type="text/javascript" src="script.js"></script>
+     <script src="https://kit.fontawesome.com/fb598451d1.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+     <script></script>
+     <title>Calculadora</title>
+     
+</head>
+<body>
+     
+     <div id="container">
+          <div id="calculadora">
+               
+               <div id="cabeca-cal">
+                    <div id="tela">
+             
+                         <span id="numeroUm">  0</span> <br><span id="operador">  </span><br>
+                         <span id="numeroDois">  </span> 
+                         <br>
+                         <br><br>
+                         <span id="resultado">
+                              
+                         </span>
+                    </div>
+               </div>
+               <br>
+               <br>
+               <div id="corpo-cal">
+                    <div id="teclado">
+                       <table> 
+                         <tr>
+                         <td>
+                         <button     onclick="adicionaNumero(1)">1</button>
+                         </td>
+                         <td>
+                         <button onclick="adicionaNumero(2)">2</button>
+                         </td> 
+                         <td>
+                         <button onclick="adicionaNumero(3)">3</button>
+                         </td>
+                         </tr>
+                         <tr>
+                              <td><button onclick="adicionaNumero(4)">
+                                   4
+                              </button>
+                              </td>
+                              <td>
+                                   <button onclick="adicionaNumero(5)">
+                                        5
+                                   </button>
+                              </td>
+                              <td>
+                                   <button onclick="adicionaNumero(6)">
+                                        6
+                                   </button>
+                              </td>
+                              <td>
+                                   <button id="resetar" class="resetar" onclick="resetarNumeros()"><i class="fas fa-sync-alt"></i></button>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <button onclick="adicionaNumero(7)">
+                                        7
+                                   </button>
+                              </td>
+                              <td>
+                                   <button onclick="adicionaNumero(8)">
+                                        8
+                                   </button>
+                                   
+                              </td>
+                              <td>
+                                   <button onclick="adicionaNumero(9)">
+                                        9
+                                   </button>
+                              </td>
+                              <td><button class="igual" onclick="realizaOperacao()">
+                                   <i class="fas fa-equals"></i>
+                              </button>
+                              </td>
+                         </tr>
+                         
+                         <tr>
+                              <td>
+                                   <button class="mais" onclick="adionaOperador('+')" >
+                                        <i class="fas fa-plus"></i>
+                                   </button>
+                                   
+                              </td>
+                              <td>
+                                   <button class="menos" onclick="adionaOperador('-')" >
+                                        <i class="fas fa-window-minimize"></i>
+                                   </button>
+                                   
+                              </td>
+                              <td>
+                                   <button class="divisao" onclick="adionaOperador('/')" >
+                                        <i class="fas fa-divide"></i>
+                                   </button>
+                                   
+                              </td>
+                              <td>
+                                   <button class="multiplicacao" onclick="adionaOperador('*')">
+                                        <i class="fas fa-times"></i>
+                                   </button>
+                                   
+                              </td>
+                         </tr>
+                         <tr>
+                              </tr>
+                        
+                         </table>
+                         
+                         
+                        <br><br>
+                        
+                    </div>
+               </div>
+          </div>
+          
+     </div>
+
+</body>
+</html>
