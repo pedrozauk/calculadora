@@ -45,11 +45,13 @@ function adicionaNumero(numrero) {
     
      if(numrero == 0 && numUm.length == 0 ){
           numUm = ""
+          document.getElementById("numeroUm").innerHTML = "0";
      }
      else{
           numUm += numrero;
+          document.getElementById("numeroUm").innerHTML = numUm;
      }
-    document.getElementById("numeroUm").innerHTML = numUm;
+     
   }
 
   if (numAtual == 1) {
